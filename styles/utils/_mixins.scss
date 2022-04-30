@@ -1,17 +1,36 @@
+// RESPONSIVE
+
 @mixin mobile-only {
     @media screen and (max-width: map-get($breakpoints, mobile)){
         @content;
     }
 }
-
 @mixin tablet-only {
     @media screen and (max-width: map-get($breakpoints, tablet)){
         @content;
     }
 }
-
 @mixin desktop-only {
     @media screen and (max-width: map-get($breakpoints, desktop)){
         @content;
     }
 }
+
+/// Shorthand mixin for offset positioning
+
+//@param {String} $position - Either `relative`, `absolute` or `fixed`
+//@param {Length} $top [null] - Top offset
+//@param {Length} $right [null] - Right offset
+//@param {Length} $bottom [null] - Bottom offset
+//@param {Length} $left [null] - Left offset
+@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+  }
+// To be used as :
+// .foo {
+//     @include position(absolute, $top: 1em, $left: 50%);
+//   }
