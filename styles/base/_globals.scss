@@ -82,9 +82,10 @@ select {
 
 body{
     height: 100vh;
-    background-color: blue;
+    background-color:$dark-grayish-blue;
+    display: flex;    
 }
 
-#advice-id{
-    color: wheat;
+main{
+  background-color: $grayish-blue;
 }

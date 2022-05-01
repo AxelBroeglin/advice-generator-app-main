@@ -83,19 +83,13 @@ select {
 /**************** End of Reset ***************/
 body {
   height: 100vh;
-  background-color: blue;
+  background-color: #323a49;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#advice-id {
-  color: wheat;
-}
-
-body {
-  height: 100vh;
-  background-color: blue;
-}
-
-#advice-id {
-  color: wheat;
+main {
+  background-color: #4e5d73;
 }
 /*# sourceMappingURL=styles.css.map */
