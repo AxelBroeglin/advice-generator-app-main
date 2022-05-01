@@ -3,3 +3,13 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/breakpoints";
+
+
+body{
+    height: 100vh;
+    background-color: blue;
+}
+
+#advice-id{
+    color: wheat;
+}
