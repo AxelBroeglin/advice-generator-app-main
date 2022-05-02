@@ -82,10 +82,29 @@ select {
 
 body{
     height: 100vh;
-    background-color:$dark-grayish-blue;
+    background-color:$dark-blue;
     display: flex;    
+    justify-content: center;
 }
 
 main{
-  background-color: $grayish-blue;
+  background-color: $dark-grayish-blue;
+  width: 90vw;
+  height: fit-content;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  top: 20vh;
+}
+
+#advice-id{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 200;
+}
+
+#advice{
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  color: white ;
 }
