@@ -96,15 +96,23 @@ main{
   flex-direction: column;
   align-items: center;
   top: 20vh;
+  padding: 2em 2em 3em 2em;
 }
 
 #advice-id{
   font-family: 'Manrope', sans-serif;
   font-weight: 200;
+  color: $neon-green;
 }
 
 #advice{
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
   color: white ;
+}
+
+#dice-container{
+  border-radius: 50%;
+  padding: 1em;
+  background-color: $neon-green;
 }
