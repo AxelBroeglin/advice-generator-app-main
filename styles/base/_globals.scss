@@ -98,6 +98,10 @@ main{
   top: 20vh;
   padding: 2em 2em 3em 2em;
 }
+main > *{
+  padding-bottom: 1.5em;
+}
+
 
 #advice-id{
   font-family: 'Manrope', sans-serif;
@@ -109,6 +113,7 @@ main{
   font-family: 'Manrope', sans-serif;
   font-weight: 800;
   color: white ;
+  text-align: center;
 }
 
 #dice-container{
