@@ -1,12 +1,12 @@
 // RESPONSIVE
 
-@mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, mobile)){
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
         @content;
     }
 }
-@mixin tablet-only {
-    @media screen and (max-width: map-get($breakpoints, tablet)){
+@mixin desktop-only {
+    @media screen and (min-width: map-get($breakpoints, desktop)){
         @content;
     }
 }
