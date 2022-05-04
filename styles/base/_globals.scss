@@ -96,7 +96,8 @@ main{
   flex-direction: column;
   align-items: center;
   top: 20vh;
-  padding: 2em 2em 3em 2em;
+  padding: 2em;
+  border-radius: 10px;
 }
 main > *{
   padding-bottom: 1.5em;
@@ -120,4 +121,7 @@ main > *{
   border-radius: 50%;
   padding: 1em;
   background-color: $neon-green;
+  position: absolute;
+  bottom: 0;
+  transform :translate(0, 50%);
 }
