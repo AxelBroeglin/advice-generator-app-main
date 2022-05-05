@@ -7,23 +7,18 @@ let newAdvice = document.getElementById('dice-container');
 
 
 //First request to receive the advice and its ID when page is loaded
-fetch('http://api.adviceslip.com/advice')
-.then(function(resp){
-    return resp.json();
-})    
-.then (function(data){
-    adviceId.innerText = 'ADVICE ' + data.slip.id;
-    advice.innerText = '"' + data.slip.advice + '"';
-}) 
-
-//On click on the button, new request to get a new advice
-newAdvice.onclick = () => {
-    fetch('http://api.adviceslip.com/advice')
-    .then(function(resp){
-        return resp.json();
-    })    
+function getAdvice(url) {
+    return fetch(url)  // returns this promise
+    .then(response => response.json())
     .then (function(data){
         adviceId.innerText = 'ADVICE ' + data.slip.id;
         advice.innerText = '"' + data.slip.advice + '"';
-    })
+    }) 
+}
+
+//Use the function by passing it the API URL
+getAdvice('http://api.adviceslip.com/advice');
+//On click on the button, new request to get a new advice
+newAdvice.onclick = () => {
+    getAdvice('http://api.adviceslip.com/advice');
 }
