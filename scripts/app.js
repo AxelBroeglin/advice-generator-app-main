@@ -16,7 +16,7 @@ function getAdvice(url) {
     }) 
 }
 
-//Use the function by passing it the API URL
+//Use the function by passing it the API url
 getAdvice('http://api.adviceslip.com/advice');
 //On click on the button, new request to get a new advice
 newAdvice.onclick = () => {
