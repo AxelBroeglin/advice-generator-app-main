@@ -30,7 +30,11 @@ I chose this exercise in order to practice my Javascript, and to use an API. I w
 
 
 ## Screenshots
-![Example video](https://axelbroeglin.dev/images/ehesp-conseil.mp4)
+
+
+https://user-images.githubusercontent.com/16608247/177057371-04c339c7-efef-44d2-910a-11fc3177e84d.mp4
+
+
 
 
 ## Thought process
