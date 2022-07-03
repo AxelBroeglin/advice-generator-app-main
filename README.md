@@ -1,4 +1,4 @@
-# EHESP Conseil
+# Adive generator app
 > A quick exercise created by Front End Mentor that makes you use an API and manipulate the data it brings.
 > Live site [_here_](https://axelbroeglin.dev/projects/advice-generator/project.html).
 
